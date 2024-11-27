@@ -1,0 +1,157 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .btn-login {
+    background-color: #ff5722;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Carrusel */
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-inner img {
+    max-width: 100%;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  /* Secciones */
+
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+    font-size: 25px;
+    margin-right: 0px;
+    
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 380px;
+    height: 450px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.features p {
+  background-color: #333;
+  color: #fff;
+  border-radius: 50px;
+}
+
+  .about,
+  .trainers,
+  .plans {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  h2 {
+    background-color: #333;
+    color: white;
+    border-radius: 30px;
+    font-size: 30px;
+  }
+  
+  .trainers-container,
+  .plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    
+  }
+  
+  .card,
+  .plan {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .card img {
+    height: 300px;
+    width: 300px;
+  }
+
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .trainers-container,
+    .plans-container,
+    .features {
+      flex-direction: column;
+    }
+  }
+  
