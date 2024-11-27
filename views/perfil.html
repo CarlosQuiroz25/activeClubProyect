@@ -24,16 +24,25 @@
             <form id="reservation-form">
                 <label for="class">Clase:</label>
                 <select id="class" required>
-                    <option value="yoga">Yoga</option>
-                    <option value="spinning">Spinning</option>
-                    <option value="crossfit">Crossfit</option>
+                    <option value="Yoga">Clase de yoga</option>
+                    <option value="Spinning">Clase de Spinning</option>
+                    <option value="ABS">Cardio ABS</option>
+                    <option value="Militar">Clase militar</option>
+                    <option value="Funcional">Clase funcional</option>
+                    <option value="Full Body">Clase Full Body</option>
                 </select>
 
                 <label for="date">Fecha:</label>
                 <input type="date" id="date" required>
 
                 <label for="time">Horario:</label>
-                <input type="time" id="time" required>
+                <select id="time" required>
+                    <option value="08:00 AM">08:00 AM</option>
+                    <option value="09:30 AM">09:30 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                    <option value="07:30 PM">07:30 PM</option>
+                </select>
 
                 <button type="submit">Reservar</button>
             </form>

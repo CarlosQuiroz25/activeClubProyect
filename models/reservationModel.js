@@ -1,3 +1,4 @@
+
 // Modelo para manejar reservas
 const reservations = [];
 
