@@ -20,6 +20,7 @@ prev.addEventListener('click', () => {
   updateCarousel();
 });
 
+// Enlaces de redes sociales de los entrenadores
 document.getElementById("entrenador1").addEventListener("click", () => {
   window.open("https://www.instagram.com/yei_aven19/", "_blank")
 })
@@ -30,7 +31,7 @@ document.getElementById("entrenador3").addEventListener("click", () => {
   window.open("https://www.instagram.com/afserna_70/", "_blank")
 })
 document.getElementById("entrenador4").addEventListener("click", () => {
-  window.LargestContentfulPaint("https://www.instagram.com/r_a_cristian/", "_blank")
+  window.open("https://www.instagram.com/r_a_cristian/", "_blank")
 })
 document.getElementById("entrenador5").addEventListener("click", () => {
   window.open("https://www.instagram.com/c_ossa/", "_blank")
@@ -39,6 +40,7 @@ document.getElementById("entrenador6").addEventListener("click", () => {
   window.open("https://www.instagram.com/alejoparra92/", "_blank")
 })
 
+// Menú hamburguesa
 document.getElementById('menu-icon').addEventListener('click', function() { 
   const navLinks = document.getElementById('nav-links'); 
   navLinks.classList.toggle('active'); });
