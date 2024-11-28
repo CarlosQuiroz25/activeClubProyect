@@ -38,3 +38,7 @@ document.getElementById("entrenador5").addEventListener("click", () => {
 document.getElementById("entrenador6").addEventListener("click", () => {
   window.open("https://www.instagram.com/alejoparra92/", "_blank")
 })
+
+document.getElementById('menu-icon').addEventListener('click', function() { 
+  const navLinks = document.getElementById('nav-links'); 
+  navLinks.classList.toggle('active'); });

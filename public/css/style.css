@@ -6,27 +6,63 @@ body {
   }
   
   /* Barra de navegación */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+  .navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; background-color: #333; 
+    padding: 10px;
+  } 
+  .logo { 
+    color: white; 
+    font-size: 24px; 
   }
-  
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+
+  .menu-icon { 
+    display: none; 
+    font-size: 24px; 
+    cursor: pointer; 
+    color: white; 
+  } 
+
+  .nav-links { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+  } 
+
+  .nav-links a { 
+    text-decoration: none; 
+    color: white; padding: 10px; 
+  } 
+
+  .nav-links a:hover { 
+    background-color: #555; 
   }
-  
+
   .btn-login {
     background-color: #ff5722;
     padding: 5px 10px;
     border-radius: 5px;
   }
-  
+
+  @media (max-width: 768px) { 
+    .menu-icon { display: block; 
+  }  
+  .nav-links { 
+    display: none; 
+    flex-direction: column; 
+    width: 100%; 
+  }       
+  .nav-links a { 
+    padding: 15px; 
+    border-top: 1px solid #444; 
+  } 
+  .nav-links.active { 
+    display: flex;
+  } 
+}
+
   /* Carrusel */
   .carousel {
     position: relative;
@@ -62,6 +98,32 @@ body {
     right: 10px;
   }
   
+  /*Descripción*/
+  .p1 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
+.p2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+h2 {
+  background-color: #333;
+  color: white;
+  border-radius: 30px;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
   /* Secciones */
 
   .features {
@@ -90,25 +152,13 @@ body {
   border-radius: 50px;
 }
 
-  .about,
-  .trainers,
-  .plans {
-    padding: 20px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
+  
 
   .about p {
     font-size: 20px;
   }
 
-  h2 {
-    background-color: #333;
-    color: white;
-    border-radius: 30px;
-    font-size: 30px;
-  }
+  
   
   .trainers-container,
   .plans-container {
