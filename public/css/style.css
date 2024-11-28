@@ -33,11 +33,13 @@ body {
 
   .nav-links a { 
     text-decoration: none; 
-    color: white; padding: 10px; 
+    color: white; padding: 8px;
+    margin-right: 15px;
   } 
 
   .nav-links a:hover { 
-    background-color: #555; 
+    background-color: #555;
+    border-radius: 20px; 
   }
 
   .btn-login {
@@ -99,17 +101,29 @@ body {
   }
   
   /*Descripción*/
-  .p1 {
+.p1 {
     color: #000;
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     margin-left: 20px;
+    margin-top: 50px;
+    font-size: 23px;
 }
 
 .p2 {
     color: #000;
     text-align: center;
-    margin-bottom: 180px;
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+
+.about a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.about a:hover {
+  color: #ff5722;
 }
 
 h2 {
@@ -152,23 +166,15 @@ h2 {
   border-radius: 50px;
 }
 
-  
-
-  .about p {
-    font-size: 20px;
-  }
-
-  
-  
-  .trainers-container,
-  .plans-container {
+.trainers-container,
+.plans-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
   }
 
-  .card:hover{
+.card:hover{
     transform: translateY(-15px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -185,8 +191,8 @@ h2 {
   }
 
   .card img {
-    height: 300px;
-    width: 300px;
+    height: 320px;
+    width: 320px;
   }
 
   
@@ -197,7 +203,11 @@ h2 {
     text-align: center;
     padding: 10px;
   }
-  
+
+  .footer a {
+    text-decoration: none;
+  }
+
   /* Responsividad */
   @media (max-width: 768px) {
     .trainers-container,

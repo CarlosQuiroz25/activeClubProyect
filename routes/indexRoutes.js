@@ -1,9 +1,16 @@
-import { Router } from 'express';
-const router = Router();
-import { getReservations, createReservation, deleteReservation } from '../controllers/reservationsController';
+import express from 'express';
+const router = express.Router();
+import reservationsController from '../controllers/reservationsController.js';
 
-router.get('/reservations', getReservations);
-router.post('/reservations', createReservation);
-router.delete('/reservations/:index', deleteReservation);
+router.get('models/reservationModel.js', reservationsController.getReservations);
+router.post('models/reservationModel.js', reservationsController.createReservation);
+router.delete('models/reservationModel.js', reservationsController.deleteReservation);
 
 export default router;
+
+router.get('models/reservationModel.js', (req, res) => {
+    res.json({ message: 'Ruta API funcionando correctamente' });
+});
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | ActiveClub</title>
+  <link rel="stylesheet" href="/public/css/contact.css">
+</head>
+<body>
+  <header>
+    <h1>Servicio al Cliente</h1>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contáctenos:</h2>
+      <p>Use nuestro formulario de contacto para asistencia rápida y personalizada.</p>
+      <form id="contactForm">
+          <label for="name">Nombre Completo <span>*</span></label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          
+          <label for="phone">Teléfono <span>*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="555-000-0000" required>
+          
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+          
+          <label for="subject">Tema <span>*</span></label>
+          <select id="subject" name="subject" required>
+              <option value="" disabled selected>-- Seleccione un tema --</option>
+              <option value="planes">Planes de membresía</option>
+              <option value="entrenadores">Información de entrenadores</option>
+              <option value="horarios">Horarios de clases</option>
+              <option value="reclamos">Reclamos</option>
+              <option value="peticiones">Peticiones</option>
+            </select>
+            
+            <label for="message">Comentarios / Descripción <span>*</span></label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="7" required></textarea>
+            
+            <div id="mensaje" style="display: none; color: green; font-size: 25px; margin-bottom: 20px;"></div>
+            <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/public/js/contact.js"></script>
+</body>
+</html>
