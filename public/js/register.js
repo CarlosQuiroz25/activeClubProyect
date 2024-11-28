@@ -12,9 +12,14 @@ document.getElementById('register-form').addEventListener('submit', function(eve
         return;
     }
 
-    // Guardar los datos en localStorage
-    localStorage.setItem('usuario', JSON.stringify({ nombre, email, password }));
+    localStorage.setItem('usuario', JSON.stringify({ nombre, email, password })); // Guardar los datos en localStorage
 
-    alert('Usuario registrado con éxito');
-    window.location.href = '/views/login.html'; // Redirige a la página de login
+    const mensaje = document.getElementById("mensaje");
+    mensaje.textContent = "Usuario registrado con éxito!";
+    mensaje.style.display = "block";
+
+    setTimeout(() => {
+        window.location.href = '/views/login.html'; // Redirige a la página de login
+    }, 2000)
+
 });

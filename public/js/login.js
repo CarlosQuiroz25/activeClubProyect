@@ -9,7 +9,6 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const usuario = JSON.parse(localStorage.getItem('usuario'));
 
     if (usuario && usuario.email === email && usuario.password === password) {
-        alert('Inicio de sesión exitoso');
         window.location.href = '/views/perfil.html'; // Redirige a la página de perfil
     } else {
         alert('Usuario o contraseña incorrectas');
