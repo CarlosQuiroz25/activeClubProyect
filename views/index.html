@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ActiveClub</title>
   <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/planes.css">
 </head>
+
 <body>
   <!-- Barra Superior -->
   <header class="navbar">
@@ -35,41 +38,43 @@
   <section class="about">
     <h2>Bienvenido a ActiveClub</h2>
     <h3 class="p1">¿QUIÉNES SOMOS?</h3>
-      <div class="p2">
-        <p>Somos un grupo interdisciplinario que sustentados en bases teóricas</p>
-        <p>y prácticas busca impactar de manera positiva en la salud de las personas</p>
-        <p>a través de la cultura del ejercicio físico y el deporte.</p>
-      </div>
+    <div class="p2">
+      <p>Somos un grupo interdisciplinario que sustentados en bases teóricas</p>
+      <p>y prácticas busca impactar de manera positiva en la salud de las personas</p>
+      <p>a través de la cultura del ejercicio físico y el deporte.</p>
+    </div>
     <h3 class="p1">¿POR QUÉ SOMOS LA MEJOR EXPERIENCIA DE ENTRENAMIENTO?</h3>
-      <div class="p2">
-        <p>En ActiveClub, sientes un ambiente cálido y familiar. Encuentras</p>
-        <p> espacios cómodos pensados para ti; contamos con excelentes equipos</p>
-        <p> y amplias zonas de entrenamiento. Nuestros entrenadores</p>
-        <p> están altamente calificados para asesorarte y guiarte en tu proceso.</p>
-        <a href="/views/login.html"><p> | ¿Qué estás esperando para unirte? |</p></a>
-      </div>
+    <div class="p2">
+      <p>En ActiveClub, sientes un ambiente cálido y familiar. Encuentras</p>
+      <p> espacios cómodos pensados para ti; contamos con excelentes equipos</p>
+      <p> y amplias zonas de entrenamiento. Nuestros entrenadores</p>
+      <p> están altamente calificados para asesorarte y guiarte en tu proceso.</p>
+      <a href="/views/login.html">
+        <p> | ¿Qué estás esperando para unirte? |</p>
+      </a>
+    </div>
   </section>
 
   <section class="features" id="features">
-    <div  id="dir_facture" class="feature">
-        <img src="/public/assets/captura1.png" alt="Entrenamiento">
-        <p>Entrenamiento</p>
+    <div id="dir_facture" class="feature">
+      <img src="/public/assets/captura1.png" alt="Entrenamiento">
+      <p>Entrenamiento</p>
     </div>
     <div class="feature">
-        <img src="/public/assets/captura2.png" alt="Nutrición">
-        <p>Nutrición</p>
+      <img src="/public/assets/captura2.png" alt="Nutrición">
+      <p>Nutrición</p>
     </div>
     <div class="feature">
-        <img src="/public/assets/captura3.png" alt="Rehabilitación">
-        <p>Rehabilitación</p>
+      <img src="/public/assets/captura3.png" alt="Rehabilitación">
+      <p>Rehabilitación</p>
     </div>
-</section>
+  </section>
 
   <!-- Entrenadores -->
   <section class="trainers" id="trainers">
     <h2>Conoce a nuestros entrenadores</h2>
     <div class="trainers-container">
-      <div class="card" id="entrenador1"><img src="/public/assets/card1.png" alt="Entrenador">  
+      <div class="card" id="entrenador1"><img src="/public/assets/card1.png" alt="Entrenador">
       </div>
       <div class="card" id="entrenador2"><img src="/public/assets/card2.png" alt="Entrenador">
       </div>
@@ -84,21 +89,67 @@
     </div>
   </section>
 
-  <!-- Planes -->
-  <section class="plans" id="plans">
-    <h2>Nuestros Planes</h2>
-    <div class="plans-container">
-      <div class="plan">
-        <h3>Personalizado</h3>
-        <p>Entrenamientos y asesorías adaptadas a ti.</p>
+  <section class="planes-top">
+    <h1 class="titulo">Nuestros Planes</h1>
+    <p class="titulo">Mejores precios a tu bolsillo</p>
+
+    <div class="container">
+      <div class="cards-sub">
+        <div class="check-icon">✔️</div> <!-- Ícono de check -->
+        <div class="card-content">
+          <div class="plan">
+            <h2 class="sub-Titulo">Personalizado</h2>
+            <p>Entrenamientos y asesorías adaptadas a ti.</p>
+            <p class="price">$ 65.000 /Mes</p>
+            <p>Más mes siguiente $ 65.000<br>
+            <a href="#" class="btn">Pagar mes</a>
+            <ul class="descriptions">
+              <li>Máquinas de musculación y cardio (la más grande del país)</li>
+              <li>Cinema Cardio (único en Latinoamérica)</li>
+              <li>Zona funcional</li>
+              <li>App Athletic: Rutinas de entrenamiento y más</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="plan">
-        <h3>Mensualidad</h3>
-        <p>Acceso completo al gimnasio durante un mes.</p>
+
+      <div class="cards-sub">
+        <div class="check-icon">✔️</div>
+        <div class="card-content">
+          <div class="plan">
+            <h2 class="sub-Titulo">Mensualidad</h2>
+            <p>Acceso completo al gimnasio durante un mes.</p>
+            <p class="price">$ 75.000 /Mes</p>
+            <p>Más mes siguiente $ 75.000<br>
+            <a href="#" class="btn">Pagar mes</a>
+            <ul class="descriptions">
+              <li>Todos los beneficios de Basico</li>
+              <li>Acceso a la zona VIP</li>
+              <li>Acceso a los otros gimnasios de la red</li>
+              <li>Entrena gratis con un amigo los días: viernes, sábado y domingo</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="plan">
-        <h3>Tiquetera</h3>
-        <p>Paga por sesiones individuales según tu disponibilidad.</p>
+
+      <div class="cards-sub">
+        <div class="check-icon">✔️</div>
+        <div class="card-content">
+          <div class="plan">
+            <h2 class="sub-Titulo">Tiquetera</h2>
+            <p>Paga por sesiones individuales según tu disponibilidad.</p>
+            <p class="price">$ 599.000</p>
+            <a href="#" class="btn">Comprar Tiquetera</a>
+            <ul class="descriptions">
+              <li>Acceso a la zona VIP</li>
+              <li>Acceso a los otros gimnasios de la red</li>
+              <li>Zona cardio</li>
+              <li>Cinema cardio</li>
+              <li>Máquinas de musculación y cardio</li>
+              <li>App Athletic: Rutina</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -112,8 +163,7 @@
   </footer>
 
   <script src="/public/js/scripts.js"></script>
-
-
-    
+  <script src="/public/js/planes.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.plan {
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.plan.expanded {
+    height: 400px;
+}
+
+
+.planes-top {
+    transition: background-position 0.3s ease;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.titulo {
+    margin-top: 1px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sub-Titulo {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}
+
+.plan {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ff5722;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plan:hover {
+    color: black;
+    background-color: black;
+}
+
+.plan h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: bisque;
+    color: black;
+}
+
+.descriptions {
+    text-align: left;
+    list-style: symbols();
+    padding: 0;
+}
+
+.descriptions li {
+    margin-bottom: 10px;
+}
+
+.plan:hover a {
+    color: #000;
+    background-color: white;
+}
+
+.p {
+    margin-top: 20px;
+}
+
+.expanded {
+    transform: scale(1.1);
+}
+
+.plan {
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.plan.expanded {
+    margin: auto;
+    height: auto;
+    padding: auto;
+}
+
+.cards-sub:hover {
+    box-shadow: 0 0 10px 1px;
+    border: 2px solid gray;
+
+}
+
+.cards-sub {
+    opacity: 0.7;
+    margin: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.plan {
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan.expanded {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.plan {
+    transition: background-color 0.3s ease;
+}
+
+.plan:hover {
+    background-color: #2d2828;
+}
+
+.cards-sub.expanded {
+    opacity: 1;
+}
+
+.cards-sub {
+    transition: all 0.3s ease;
+}
+
+.cards-sub.expanded {
+    transform: scale(1.1);
+}
+
+.cards-sub {
+    position: relative;
+    transition: all 0.3s ease;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards-sub:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.check-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: green;
+    display: none;
+}
+
+.cards-sub.expanded .check-icon {
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    .cards-sub {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        /* Disposición en grid */
+        gap: 1rem;
+        /* Espacio entre tarjetas */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-sub {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+}
