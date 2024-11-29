@@ -30,17 +30,10 @@ header {
     background-color: #000;
 }
 
-.logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .titulo {
     margin-top: 1px;
     font-size: 40px;
     font-weight: bold;
-    color: black;
 }
 
 .container {
@@ -60,7 +53,6 @@ h1 {
 }
 
 .sub-Titulo {
-    color: red;
     text-align: center;
     font-size: 18px;
 }
@@ -74,8 +66,7 @@ h1 {
 }
 
 .plan:hover {
-    color: black;
-    background-color: black;
+    color: white;
 }
 
 .plan h2 {
@@ -99,11 +90,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.btn:hover {
-    background-color: bisque;
-    color: black;
-}
-
 .descriptions {
     text-align: left;
     list-style: symbols();
@@ -112,11 +98,6 @@ h1 {
 
 .descriptions li {
     margin-bottom: 10px;
-}
-
-.plan:hover a {
-    color: #000;
-    background-color: white;
 }
 
 .p {
@@ -139,13 +120,18 @@ h1 {
 }
 
 .cards-sub:hover {
+    background-color: black;
+    box-shadow: 0 0 10px 1px;
+    border: 2px solid gray;
+}
+
+.cards-sub:hover a {
     box-shadow: 0 0 10px 1px;
     border: 2px solid gray;
 
 }
 
 .cards-sub {
-    opacity: 0.7;
     margin: 40px;
     border-radius: 20px;
     border: 1px solid black;
@@ -169,10 +155,6 @@ h1 {
 
 .plan {
     transition: background-color 0.3s ease;
-}
-
-.plan:hover {
-    background-color: #2d2828;
 }
 
 .cards-sub.expanded {
@@ -220,6 +202,19 @@ h1 {
     display: block;
 }
 
+.sub-Titulo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.encabezado {
+    background-color: #ff5722;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 70px;
+    width: 100em;
+}
 
 
 @media (max-width: 768px) {
