@@ -31,41 +31,14 @@ h1 {
     display: inline-block;
 }
 
-.menu-btn {
+.menu-btn  a{
     padding: 10px;
-    background-color: #333;
-    color: white;
+    color: black;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    min-width: 150px;
-    z-index: 1;
-    text-align: left;
-    border-radius: 5px;
-}
-
-.dropdown-content a {
-    padding: 10px;
     text-decoration: none;
-    display: block;
-    color: #333;
 }
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
+    
 form {
     margin-top: 20px;
 }
@@ -85,14 +58,14 @@ input, select, button {
     width: 100%;
 }
 
-button {
+.btn-reservas {
     background-color: #333;
     color: white;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-button:hover {
+.btn-reservas:hover {
     background-color: #ff5722;
 }
 

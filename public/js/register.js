@@ -20,6 +20,6 @@ document.getElementById('register-form').addEventListener('submit', function(eve
 
     setTimeout(() => {
         window.location.href = '/views/login.html'; // Redirige a la página de login
-    }, 2000)
+    }, 3000)
 
 });
