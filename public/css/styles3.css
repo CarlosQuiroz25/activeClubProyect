@@ -69,6 +69,7 @@ body {
   .carousel {
     position: relative;
     overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgb(0,0,0,0.66);
   }
   
   .carousel-inner {
