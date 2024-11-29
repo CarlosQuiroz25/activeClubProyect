@@ -25,14 +25,6 @@
     line-height: 1.6;
 }
 
-
-
-.logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .planes-top .titulo {
     margin-top: 1px;
     font-size: 40px;
@@ -162,7 +154,6 @@
 }
 
 .plan:hover {
-    background-color: #2d2828;
     color: white;
 }
 
