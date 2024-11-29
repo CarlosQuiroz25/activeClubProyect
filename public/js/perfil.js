@@ -34,13 +34,5 @@ reservationForm.addEventListener('submit', (e) => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const usuario = JSON.parse(localStorage.getItem('usuario'));
-
-    if (!usuario) {
-        alert('Debes iniciar sesión primero');
-        window.location.href = '/views/login.html'; // Redirige al login si no hay usuario
-        return;
-    }
-
-    // Mostrar el nombre del usuario
-    document.getElementById('user-nombre').textContent = usuario.nombre;
+    document.getElementById('user-nombre').textContent = usuario.nombre; // Mostrar el nombre del usuario
 });

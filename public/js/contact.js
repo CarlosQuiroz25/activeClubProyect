@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
   
       const mensaje = document.getElementById("mensaje");
-        mensaje.textContent = "Mensaje enviado con éxito!";
+        mensaje.textContent = "Tu solicitud ha sido enviada con éxito!";
         mensaje.style.display = "block";
 
     setTimeout(() => {
         window.location.href = '/views/index.html'; // Redirige a la página de inicio
-    }, 2000)
+    }, 3000)
     });
   });
