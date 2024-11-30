@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #e2e2e2;
   }
   
   header {
-    background-color: #f4f4f4;
+    background-color: #e2e2e2;
     padding: 20px;
     border-bottom: 2px solid #2c3e50;
   }
@@ -23,6 +24,7 @@ body {
     max-width: 600px;
     border: 1px solid #2c3e50;
     border-radius: 5px;
+    background-color: #fff;
   }
   
   .contact-section h2 {

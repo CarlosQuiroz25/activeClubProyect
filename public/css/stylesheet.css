@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #e2e2e2;
 }
 
 .container {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 110px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
