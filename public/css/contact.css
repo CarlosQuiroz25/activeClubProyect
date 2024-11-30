@@ -76,4 +76,9 @@ body {
   span {
     color: red;
   }
+
+  .btn-cerrar{
+    text-decoration: none;
+    color: white;
+  }
   

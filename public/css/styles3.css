@@ -118,13 +118,24 @@ body {
     font-size: 20px;
 }
 
-.about a{
+.about a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .about a:hover {
-  color: #ff5722;
+  background-color: #ff5722;
+}
+
+.btn-about p{
+  color: white;
+  background-color: #2c3e50;
+  border-radius: 20px;
+  margin: 5px 480px;
+}
+
+.btn-about p:hover{
+  background-color: #ff5722;
 }
 
 h2 {
@@ -160,12 +171,15 @@ h2 {
     height: 450px;
     margin-bottom: 10px;
     border-radius: 20px;
+    margin-top: 15px;
 }
 
 .features p {
   background-color: #2c3e50;
   color: #fff;
   border-radius: 50px;
+  margin-right: 45px;
+  margin-left: 45px;
 }
 
 .trainers-container,
@@ -208,6 +222,7 @@ h2 {
 
   .footer a {
     text-decoration: none;
+    color: #ff5722;
   }
 
   /* Responsividad */
